@@ -6,7 +6,7 @@ Here's a README file for this Repository:
 ```markdown
 # Flower Classification Web Application
 
-This is a web application for classifying flower images using a pre-trained model. Users can upload an image of a flower, and the application will predict the class of the flower.
+This is a web application for classifying flower images using a pre-trained model. Users can upload an image of a flower, and the application will predict the class of the flower among 10 different flower speices.
 
 ## Features
 
@@ -23,6 +23,9 @@ The backend of this web application is implemented using Python and FASTAPI.
 
 - Python (version 3.9 or higher)
 - FASTAPI (Backend Python Library)
+- uvicorn(Https Server for fastapi)
+- Basic Python libraries(all given in reqiurements.txt)
+
 
 
 ## How to Use
