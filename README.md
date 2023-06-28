@@ -15,13 +15,25 @@ This is a web application for classifying flower images using a pre-trained mode
 - Display the predicted class label and the uploaded image.
 - Social media links to Instagram and LinkedIn profiles.
 
+## Backend Setup
+
+The backend of this web application is implemented using Python and FASTAPI.
+
+### Prerequisites
+
+- Python (version 3.9 or higher)
+- FASTAPI (Backend Python Library)
+
+
 ## How to Use
 
 1. Clone this repository to your local machine:
 
-   ```shell
+   ``` shell
    git clone https://github.com/Vaibhav1772/Flower_Classification_Webpage.git
    ```
+   Install all requirements first:
+   pip install -r requirements.txt
 
 2. Open the `index.html` file in your web browser.
 
