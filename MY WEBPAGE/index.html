@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower Classification</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="heading">Flower Classification </h1>
+        <p>Upload an image of a flower to classify it.</p>
+        <div class="upload-container" id="drop-area">
+            <img src="Images/pngwing.com (1).png" alt="UPLOAD" id="upld">
+
+            <label for="upload-input" class="upload-label">Drag and Drop or Click to Upload</label>
+            <input type="file" id="upload-input" class="upload-input" accept="image/*">
+            <div id="file-name" class="upload-file-name"></div>
+            <div id="progress-bar" class="progress-bar"></div>
+
+        </div>
+        <button type="submit" id="submit" onclick="">SUBMIT</button>
+
+        <ul class="list">
+            <a href="https://www.instagram.com/vaibhavmishra7376/"><img src="Images/pngwing.com (2).png" alt="INSTAGRAM"
+                    id="insta"></a>
+            <a href="https://www.linkedin.com/in/vaibhav-mishra-vm3010/"><img src="Images/pngwing.com (3).png"
+                    alt="LINKED_IN"></a>
+        </ul>
+
+        <div class="result-container" id="result-container">
+
+            <img id="result-image" class="result-image" src="" alt="Result Image">
+            <div id="result-label" class="result-label"></div>
+        </div>
+
+        <div class="overlay" id="overlay">
+            <div class="overlay-content">
+                <img id="uploaded-image" src="#" alt="Uploaded Image">
+                <div id="output-container">
+                    <p id="output-label"></p>
+                    <img id="output-image" src="#" alt="Output Image">
+
+                </div>
+                <div id="close-button">X</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
