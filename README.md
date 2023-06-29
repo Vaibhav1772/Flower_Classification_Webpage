@@ -1,4 +1,4 @@
-# Flower_Classifiactrion_Webpage
+# Flower_Classification_Webpage
 This is a webpage for the flower classification model.
 
 Here's a README file for this Repository:
