@@ -9,46 +9,50 @@
 </head>
 
 <body>
+    <header class="heading">
+        Flower Image Classification
+    </header>
+    <p class="para">Upload an image of a flower to classify it.</p>
     <div class="container">
-        <h1 id="heading">Flower Classification </h1>
-        <p>Upload an image of a flower to classify it.</p>
-        <div class="upload-container" id="drop-area">
-            <img src="Images/pngwing.com (1).png" alt="UPLOAD" id="upld">
-
-            <label for="upload-input" class="upload-label">Drag and Drop or Click to Upload</label>
-            <input type="file" id="upload-input" class="upload-input" accept="image/*">
-            <div id="file-name" class="upload-file-name"></div>
-            <div id="progress-bar" class="progress-bar"></div>
-
+        <div class="file-upload" id="file-upload">
+            <label for="upload-input" class="upload-label">
+                <div class="upload-icon"></div>
+                Drag and Drop or Click to Upload
+            </label>
+            <input id="upload-input" type="file" accept=".png, .jpg, .jpeg" hidden>
         </div>
-        <button type="submit" id="submit" onclick="">SUBMIT</button>
-
-        <ul class="list">
-            <a href="https://www.instagram.com/vaibhavmishra7376/"><img src="Images/pngwing.com (2).png" alt="INSTAGRAM"
-                    id="insta"></a>
-            <a href="https://www.linkedin.com/in/vaibhav-mishra-vm3010/"><img src="Images/pngwing.com (3).png"
-                    alt="LINKED_IN"></a>
-        </ul>
-
-        <div class="result-container" id="result-container">
-
-            <img id="result-image" class="result-image" src="" alt="Result Image">
-            <div id="result-label" class="result-label"></div>
-        </div>
-
-        <div class="overlay" id="overlay">
-            <div class="overlay-content">
-                <img id="uploaded-image" src="#" alt="Uploaded Image">
-                <div id="output-container">
-                    <p id="output-label"></p>
-                    <img id="output-image" src="#" alt="Output Image">
-
+        <div class="image-preview" id="image-preview" style="display: none;">
+            <img id="uploaded-image" src="" alt="Uploaded Image">
+            <div class="progress-bar-border">
+                <div class="progress-bar-container" id="progress-bar-container" style="display: none;">
+                    <div class="progress-bar" id="progress-bar"></div>
+                    <div class="progress-text" id="progress-text">0%</div>
                 </div>
-                <div id="close-button">X</div>
+            </div>
+
+        </div>
+
+    </div>
+    <button type="submit" id="submit" onclick="">Submit</button>
+
+    <div class="result-container" id="result-container">
+        <img id="result-image" class="result-image" src="">
+        <div id="result-label" class="result-label"></div>
+    </div>
+
+    <div class="overlay" id="overlay">
+        <div class="overlay-content">
+            <img id="return-image" src="#" alt="Uploaded Image">
+            <div id="output-container">
+                <p id="output-label"></p>
+                <img id="output-image" src="#" alt="Output Image">
+
+            </div>
+            <div id="close-button">
+                <img id="closebtn" src="https://logowik.com/content/uploads/images/close1437.jpg">
             </div>
         </div>
     </div>
-
     <script src="script.js"></script>
 </body>
 
