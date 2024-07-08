@@ -5,3 +5,4 @@ uvicorn
 opencv-python
 Pillow
 joblib
+setuptools
