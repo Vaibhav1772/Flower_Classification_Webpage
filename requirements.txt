@@ -1,8 +1,6 @@
-uvicorn
-tensorflow
-numpy
-pandas
-Pillow
 fastapi
-io
-os
+uvicorn
+numpy
+opencv-python
+Pillow
+joblib
