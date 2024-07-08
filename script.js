@@ -61,7 +61,7 @@ uploadButton.addEventListener('click', function () {
     reader.readAsDataURL(fileInput.files[0]);
 
     // Send the image file to the backend
-    fetch('https://glowing-waffle-76gpq9p7gjrcpw4p-8000.app.github.dev/predict', {
+    fetch('https://main--flowerclassifier.netlify.app/predict', {
         method: 'POST',
         body: formData
     })
