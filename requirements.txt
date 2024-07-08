@@ -1,3 +1,4 @@
+distutils
 scikit-learn==1.2.2
 numpy==1.25.2
 fastapi
@@ -6,4 +7,3 @@ opencv-python
 Pillow
 joblib
 setuptools
-distutils
