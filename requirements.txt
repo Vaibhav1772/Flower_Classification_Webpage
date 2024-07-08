@@ -1,7 +1,7 @@
+scikit-learn==1.2.2
+numpy==1.25.2
 fastapi
 uvicorn
-numpy==1.25.2
 opencv-python
 Pillow
 joblib
-scikit-learn==1.2.2
