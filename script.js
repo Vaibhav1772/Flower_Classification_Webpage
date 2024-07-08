@@ -61,7 +61,7 @@ uploadButton.addEventListener('click', function () {
     reader.readAsDataURL(fileInput.files[0]);
 
     // Send the image file to the backend
-    fetch('http://localhost:8000/predict', {
+    fetch('https://glowing-waffle-76gpq9p7gjrcpw4p-8000.app.github.dev/predict', {
         method: 'POST',
         body: formData
     })
@@ -71,12 +71,12 @@ uploadButton.addEventListener('click', function () {
             var detailsContainer = document.getElementById('output-container');
             overlay.style.display = 'block';
             detailsContainer.innerHTML = `
-            <h2 style="text-transform: uppercase">${data.PREDICTED}</h2>
+            <h2 style="text-transform: uppercase">${data.predicted_class}</h2>
             <p ><strong>Confidence:</strong> ${data.Confidence}<span>%</span></p>
             <p><strong>Scientific Name:</strong> ${data.details.scientific_name}</p>
             <p><strong>Description:</strong> ${data.details.description}</p>
             <p><strong>Habitat:</strong> ${data.details.habitat}</p>
-            <p><strong>Symbolism:</strong> ${data.details.symbolism}</p>
+            <p><strong>Symbolism:</strong> ${data.details.uses}</p>
         `;
             outputContainer.style.display = 'block';
             outputImage.src = data.result_image_url;
